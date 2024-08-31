@@ -31,7 +31,7 @@ Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
 ### 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/sistema-gestion-inventario.git
+git clone https://github.com/tu-usuario/gestion-inventario.git
 
 ```
 ### 2. Navega al directorio del proyecto:
