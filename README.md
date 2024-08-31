@@ -28,37 +28,52 @@ Este proyecto implementa un sistema de gestión de inventario en Python. El sist
 
 Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
 
-# **Clona el repositorio**:
+### 1. Clona el repositorio:
 
-   ```bash
+```bash
 git clone https://github.com/tu-usuario/sistema-gestion-inventario.git
 
-# **Navega al directorio del proyecto**
-   ```bash
+```
+### 2. Navega al directorio del proyecto:
+```bash
 cd sistema-gestion-inventario
-
-# **Crear un entorno virtual:**
-   ```bash
+```
+### 3. Crear un entorno virtual:
 En Windows:
+```bash
 
 python -m venv venv
-# **Activar el entorno virtual:**
-   ```bash
-source venv/bin/activate
+```
+En macOS/Linux:
+```
+python3 -m venv venv
+```
+### 4. Activar el entorno virtual:
 En Windows:
+```bash
+
 .\venv\Scripts\activate
-## Instalar dependencias:
-   ```bash
+```
+En macOS/Linux:
+```bash
+
+source venv/bin/activate
+```
+### 5. Instalar dependencias:
 Si tienes un archivo requirements.txt, instala las dependencias con el siguiente comando:
 
+```bash
+
 pip install -r requirements.txt
-Ejecución del Proyecto:
+```
+### 6. Ejecución del Proyecto:
+Una vez que hayas activado el entorno virtual y hayas instalado todas las dependencias necesarias, puedes ejecutar el proyecto de la siguiente manera:
 
-# Una vez que hayas activado el entorno virtual y hayas instalado todas las dependencias necesarias, puedes ejecutar el proyecto de la siguiente manera:
-
+```bash
 python main.py
-Asegúrate de que el archivo que estás ejecutando contenga el código para instanciar y utilizar las clases del sistema de gestión de inventario.
+```
+Asegúrate de que el archivo main.py contenga el código para instanciar y utilizar las clases del sistema de gestión de inventario.
 
-# **Uso del Proyecto**
-El sistema de gestión de inventario permite registrar productos, categorías, proveedores y bodegas, así como gestionar el stock y realizar consultas sobre la disponibilidad de productos. Primero, se crean categorías para organizar los productos, como "Electrónica" para agrupar dispositivos. Luego, se registran productos con atributos como nombre, descripción, precio y stock inicial, y se asocian a categorías. Los productos también se pueden asignar a proveedores que los suministran, añadiendo detalles como nombre, dirección y teléfono del proveedor. Posteriormente, los productos se almacenan en bodegas, verificando la capacidad disponible. Finalmente, el sistema permite consultar la disponibilidad de productos en una bodega específica y generar reportes de stock por categoría, proveedor o bodega, facilitando la gestión integral del inventario.
+### 7. Uso del Proyecto
+El sistema de gestión de inventario permite registrar productos, categorías, proveedores y bodegas, así como gestionar el stock y realizar consultas sobre la disponibilidad de productos.
 
