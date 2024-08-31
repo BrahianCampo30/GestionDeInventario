@@ -24,75 +24,60 @@ Este proyecto implementa un sistema de gestión de inventario en Python. El sist
   - Consultar información de productos, categorías, proveedores y bodegas.
   - Generar informes de stock.
 
-## Estructura del Código
+## Instalación y Ejecución
 
-### Clases Principales
+Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
 
-1. **Producto**
-   - Atributos:
-     - `nombre`: Nombre del producto.
-     - `descripcion`: Descripción del producto.
-     - `precio`: Precio del producto.
-     - `stockInicial`: Stock inicial del producto.
-     - `stockActual`: Stock actual del producto.
-   - Métodos:
-     - `agregar_stock(cantidad)`: Agrega stock al producto.
-     - `retirar_stock(cantidad)`: Retira stock del producto.
-     - `calcular_valor_total()`: Calcula el valor total del stock del producto.
+1. **Clona el repositorio**:
 
-2. **Categoria**
-   - Atributos:
-     - `nombre`: Nombre de la categoría.
-     - `descripcion`: Descripción de la categoría.
-   - Métodos:
-     - `agregar_producto(producto)`: Agrega un producto a la categoría.
-     - `eliminar_producto(producto)`: Elimina un producto de la categoría.
+   ```bash
+   git clone https://github.com/tu-usuario/sistema-gestion-inventario.git
 
-3. **Proveedor**
-   - Atributos:
-     - `nombre`: Nombre del proveedor.
-     - `direccion`: Dirección del proveedor.
-     - `telefono`: Teléfono del proveedor.
-   - Métodos:
-     - `agregar_producto(producto)`: Agrega un producto a la lista de productos suministrados.
-     - `eliminar_producto(producto)`: Elimina un producto de la lista de productos suministrados.
+**Navega al directorio del proyecto:**
 
-4. **Bodega**
-   - Atributos:
-     - `nombre`: Nombre de la bodega.
-     - `ubicacion`: Ubicación de la bodega.
-     - `capacidad_maxima`: Capacidad máxima de la bodega.
-   - Métodos:
-     - `agregar_producto(producto, cantidad)`: Agrega un producto a la bodega, verificando el espacio disponible.
-     - `retirar_producto(producto, cantidad)`: Retira un producto de la bodega, verificando el stock disponible.
-     - `consultar_disponibilidad(producto)`: Consulta la disponibilidad de un producto en la bodega.
+bash
+Copiar código
+cd sistema-gestion-inventario
+**Crear un entorno virtual:**
 
-## Ejemplo de Uso
+En sistemas Unix/macOS:
 
-```python
-# Crear una categoría
-categoria = Categoria("Electrónica", "Dispositivos electrónicos y gadgets")
+bash
+Copiar código
+python3 -m venv venv
+En Windows:
 
-# Crear un producto
-producto = Producto("Laptop", "Laptop de 15 pulgadas", 1000.00, 10)
+bash
+Copiar código
+python -m venv venv
+**Activar el entorno virtual:**
 
-# Agregar el producto a la categoría
-categoria.agregar_producto(producto)
+En sistemas Unix/macOS:
 
-# Crear un proveedor
-proveedor = Proveedor("Proveedor A", "Calle 123", "123456789")
+bash
+Copiar código
+source venv/bin/activate
+En Windows:
 
-# Agregar el producto al proveedor
-proveedor.agregar_producto(producto)
+bash
+Copiar código
+.\venv\Scripts\activate
+##Instalar dependencias:
 
-# Crear una bodega
-bodega = Bodega("Bodega Central", "Zona Industrial", 100)
+Si tienes un archivo requirements.txt, instala las dependencias con el siguiente comando:
 
-# Almacenar el producto en la bodega
-bodega.agregar_producto(producto, 5)
+bash
+Copiar código
+pip install -r requirements.txt
+Ejecución del Proyecto:
 
-# Consultar la disponibilidad del producto en la bodega
-disponible = bodega.consultar_disponibilidad(producto)
-print(f"Disponibilidad de {producto.nombre} en la bodega: {'Sí' si disponible else 'No'}")
+Una vez que hayas activado el entorno virtual y hayas instalado todas las dependencias necesarias, puedes ejecutar el proyecto de la siguiente manera:
 
+bash
+Copiar código
+python main.py
+Asegúrate de que el archivo que estás ejecutando contenga el código para instanciar y utilizar las clases del sistema de gestión de inventario.
+
+**Uso del Proyecto**
+El sistema de gestión de inventario permite registrar productos, categorías, proveedores y bodegas, así como gestionar el stock y realizar consultas sobre la disponibilidad de productos. Primero, se crean categorías para organizar los productos, como "Electrónica" para agrupar dispositivos. Luego, se registran productos con atributos como nombre, descripción, precio y stock inicial, y se asocian a categorías. Los productos también se pueden asignar a proveedores que los suministran, añadiendo detalles como nombre, dirección y teléfono del proveedor. Posteriormente, los productos se almacenan en bodegas, verificando la capacidad disponible. Finalmente, el sistema permite consultar la disponibilidad de productos en una bodega específica y generar reportes de stock por categoría, proveedor o bodega, facilitando la gestión integral del inventario.
 
