@@ -28,52 +28,46 @@ Este proyecto implementa un sistema de gestión de inventario en Python. El sist
 
 Para instalar y ejecutar el proyecto, sigue los siguientes pasos:
 
-1. **Clona el repositorio**:
+## **Clona el repositorio**:
 
    ```bash
    git clone https://github.com/tu-usuario/sistema-gestion-inventario.git
 
-**Navega al directorio del proyecto:**
+## **Navega al directorio del proyecto:**
 
-bash
 Copiar código
 cd sistema-gestion-inventario
-**Crear un entorno virtual:**
+
+## **Crear un entorno virtual:**
 
 En sistemas Unix/macOS:
 
-bash
 Copiar código
 python3 -m venv venv
 En Windows:
 
-bash
 Copiar código
 python -m venv venv
 **Activar el entorno virtual:**
 
 En sistemas Unix/macOS:
 
-bash
 Copiar código
 source venv/bin/activate
 En Windows:
 
-bash
 Copiar código
 .\venv\Scripts\activate
-##Instalar dependencias:
+## Instalar dependencias:
 
 Si tienes un archivo requirements.txt, instala las dependencias con el siguiente comando:
 
-bash
 Copiar código
 pip install -r requirements.txt
 Ejecución del Proyecto:
 
 Una vez que hayas activado el entorno virtual y hayas instalado todas las dependencias necesarias, puedes ejecutar el proyecto de la siguiente manera:
 
-bash
 Copiar código
 python main.py
 Asegúrate de que el archivo que estás ejecutando contenga el código para instanciar y utilizar las clases del sistema de gestión de inventario.
